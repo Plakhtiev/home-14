@@ -1,152 +1,497 @@
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-
-ul,
-li,
-a,
-p {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-decoration: none;
-}
-
-html {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-body {
-    height: 100%;
-    margin: 0;
-}
-
-.wrapper {
-    max-width: 2015px;
-    margin: 0px auto;
-}
-
-.header {
-    width: 100%;
-    min-width: 862px;
-    position: relative;
-    padding-left: 23%;
-    padding-right: 23%;
-    color: #fff;
-}
-
-.background {
-    min-height: 862px;
-}
-
-.background::before {
-    width: 100%;
-    height: 100%;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-image: url(./img/background_header.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    filter: brightness(10%)
-}
-
-.head {
-    padding-top: 100px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.nav-menu {
-    position: relative;
-    padding-right: 40px;
-}
-
-.nav-menu::after {
-    content: '';
-    width: 26px;
-    height: 4px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: inline-block;
-    background-color: #fff;
-}
-
-.nav-menu::before {
-    content: '';
-    width: 26px;
-    height: 3px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    background-color: #fff;
-}
-
-.nav-menu span::before {
-    content: '';
-    width: 26px;
-    height: 3px;
-    position: absolute;
-    bottom: 40%;
-    right: 0;
-    background-color: #fff;
-}
-
-.logo {
-    font-size: 20px;
-}
-
-.header h1 {
-    font-size: 70px;
-    font-weight: 800;
-}
-
-.header span {
-    color: #f7600e;
-}
-
-.header_content {
-    padding-top: 180px;
-    margin: 0px auto;
-    text-align: center;
-}
-
-.header_content p {
-    font-size: 20px;
-    padding-bottom: 60px;
-}
-
-.header_button {
-    padding: 19px 75px;
-    border: 1px solid gray;
-    border-radius: 10px;
-    color: #fff;
-    font-weight: 600;
-    background-color: transparent;
-}
-
-.header_button:hover {
-    background-color: #f7600e;
-}
-
-.main {}
-
-.option {
-    background-color: bisque;
-}
-
-.follow {}
-
-.button_follow {}
+                *,
+                *::after,
+                *::before {
+                    box-sizing: border-box;
+                    padding: 0;
+                    margin: 0;
+                    border: 0;
+                }
+                
+                i {
+                    width: 50px;
+                    height: 50px;
+                    font-size: 30px;
+                }
+                
+                .fa-facebook {
+                    color: #385898;
+                    cursor: pointer;
+                }
+                
+                ul,
+                li,
+                a,
+                p {
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                    text-decoration: none;
+                }
+                
+                button {
+                    cursor: pointer;
+                }
+                
+                html {
+                    width: 100%;
+                    height: 100%;
+                    padding: 0;
+                    margin: 0;
+                    font-size: 16px;
+                    font-family: 'Open Sans', sans-serif;
+                }
+                
+                body {
+                    height: 100%;
+                    margin: 0;
+                }
+                
+                .wrapper {
+                    max-width: 2015px;
+                    margin: 0px auto;
+                }
+                
+                .header {
+                    width: 100%;
+                    min-width: 862px;
+                    position: relative;
+                    padding-left: 23%;
+                    padding-right: 23%;
+                    color: #fff;
+                }
+                
+                .background {
+                    min-height: 862px;
+                }
+                
+                .background {
+                    width: 100%;
+                    height: 100%;
+                    background-image: url(./img/background_header.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                
+                .head {
+                    padding-top: 100px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                
+                .nav-menu {
+                    display: flex;
+                }
+                
+                .nav-menu p {
+                    padding-right: 20px;
+                }
+                
+                .menu-btn {
+                    display: block;
+                    width: 25px;
+                    height: 25px;
+                    position: relative;
+                    border-top: 1px solid #fff;
+                    border-bottom: 1px solid #fff;
+                    transition: 0.5s;
+                }
+                
+                .menu-btn span::before {
+                    content: '';
+                    width: 25px;
+                    height: 1px;
+                    position: absolute;
+                    top: 49%;
+                    background-color: #fff;
+                }
+                
+                .logo {
+                    font-size: 20px;
+                }
+                
+                .header h1 {
+                    font-size: 70px;
+                    font-weight: 800;
+                }
+                
+                .header span {
+                    color: #f7600e;
+                }
+                
+                .header_content {
+                    padding-top: 180px;
+                    margin: 0px auto;
+                    text-align: center;
+                }
+                
+                .header_content p {
+                    font-size: 20px;
+                    padding-bottom: 60px;
+                }
+                
+                .header_button {
+                    padding: 19px 75px;
+                    border: 1px solid gray;
+                    border-radius: 10px;
+                    color: #fff;
+                    font-weight: 600;
+                    background-color: transparent;
+                    transition: 0.5s;
+                }
+                
+                .header_button:hover {
+                    background-color: #f7600e;
+                }
+                
+                .main {
+                    padding-top: 200px;
+                }
+                
+                .option {
+                    padding-bottom: 110px;
+                    display: flex;
+                    justify-content: center;
+                }
+                
+                .around_icon {
+                    width: 150px;
+                    height: 150px;
+                    text-align: center;
+                    border: 1px solid rgba(59, 67, 76, 0.3);
+                    border-radius: 50%;
+                    fill: #f7600e;
+                }
+                
+                .option-item {
+                    max-width: 235px;
+                    padding-right: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .option-item p {
+                    font-size: 14px;
+                }
+                
+                .option-item h3 {
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    text-align: center;
+                }
+                
+                .follow {
+                    min-height: 250px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-image: url(./img/Photo_Background_folow.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                
+                .folow_email {
+                    width: 562px;
+                    height: 50px;
+                    border-radius: 10px;
+                    background-color: #ffffff;
+                }
+                
+                .submit_follow {
+                    width: 269px;
+                    height: 50px;
+                    border-radius: 10px;
+                    background-color: #f7600e;
+                }
+                
+                .submit_follow:hover {
+                    color: #ffffff;
+                }
+                
+                .foto_item {
+                    position: relative;
+                }
+                
+                .link_foto {
+                    width: 100%;
+                    height: 99%;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    justify-content: space-evenly;
+                    position: absolute;
+                    border-radius: 10px;
+                    top: 0;
+                    left: 0;
+                    visibility: hidden;
+                    color: #ffffff;
+                    background-color: rgba(247, 96, 14, 0.9);
+                }
+                
+                .foto_item:hover {
+                    cursor: pointer;
+                }
+                
+                .foto_item:hover .link_foto {
+                    visibility: visible;
+                }
+                
+                .title {
+                    font-size: 25px;
+                }
+                
+                .link_foto button {
+                    width: 210px;
+                    height: 50px;
+                    border-radius: 10px;
+                    font-size: 18px;
+                    border: 1px solid #ffffff;
+                    background-color: #ffffff;
+                    transition: 0.5s;
+                    color: #f7600e;
+                }
+                
+                .about_foto {
+                    max-width: 1200px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    padding-bottom: 50px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                }
+                
+                .about_head {
+                    padding-top: 100px;
+                    padding-bottom: 100px;
+                    text-align: center;
+                }
+                
+                .about_head span {
+                    font-size: 35px;
+                    text-transform: uppercase;
+                    color: #f7600e;
+                }
+                
+                .about_head h2 {
+                    padding-bottom: 30px;
+                    font-size: 35px;
+                    text-transform: uppercase;
+                }
+                
+                .foto_item {
+                    margin-bottom: 20px;
+                    margin-right: 20px;
+                }
+                
+                .button_about_foto button {
+                    padding: 19px 75px;
+                    border: 1px solid gray;
+                    border-radius: 10px;
+                    color: gray;
+                    font-weight: 600;
+                    transition: 0.5s;
+                    background-color: transparent;
+                }
+                
+                .button_about_foto {
+                    transition: 0.5s;
+                    text-align: center;
+                }
+                
+                .button_about_foto button:hover {
+                    color: #fff;
+                    background-color: #f7600e;
+                }
+                
+                .about_comment {
+                    min-height: 500px;
+                    margin-top: 100px;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    justify-content: center;
+                    background-image: url(./img/Background_comment.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                
+                .about_comment div:nth-child(2) {
+                    padding: 30px 0px;
+                    font-size: 25px;
+                    font-style: italic;
+                    line-height: 40px;
+                    color: #ffffff;
+                }
+                
+                .about_comment div:last-child {
+                    font-size: 18px;
+                    color: #ffffff;
+                }
+                
+                .comment p {
+                    position: relative;
+                    display: inline-block;
+                    padding: 0 200px;
+                }
+                
+                .comment p::before,
+                .comment p::after {
+                    content: '';
+                    position: absolute;
+                    display: inline-block;
+                    border-right: 3px solid #fff;
+                    border-bottom: 3px solid #fff;
+                    /* border-width: 0 3px 3px 0;     */
+                    padding: 20px;
+                }
+                
+                .comment p::after {
+                    right: 0;
+                    transform: rotate(-45deg);
+                }
+                
+                .comment p::before {
+                    left: 0;
+                    transform: rotate(135deg);
+                }
+                
+                .our_team {
+                    padding-top: 70px;
+                    padding-left: 440px;
+                    padding-right: 440px;
+                    text-align: center;
+                }
+                
+                .team_head span,
+                .registranion_head span {
+                    color: #f7600e;
+                }
+                
+                .team_head h2,
+                .registranion_head h2 {
+                    padding: 30px 0px;
+                    font-size: 35px;
+                    text-transform: uppercase;
+                }
+                
+                .team_foto {
+                    display: flex;
+                    padding-top: 100px;
+                    justify-content: center;
+                }
+                
+                .border img:hover {
+                    position: relative;
+                    bottom: 15px;
+                    border-bottom: 3px solid #f7600e;
+                }
+                
+                .name_person {
+                    padding: 30px 0px;
+                    font-size: 25px;
+                    line-height: 10px;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    color: #3b434c;
+                }
+                
+                .about_person,
+                .registranion_head p {
+                    color: #3b434c;
+                    font-size: 14px;
+                    line-height: 26px;
+                }
+                
+                .team_foto-item {
+                    padding-bottom: 50px;
+                }
+                
+                .registranion {
+                    padding-top: 100px;
+                }
+                
+                .registranion_head p {
+                    padding-bottom: 30px;
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #fff;
+                }
+                
+                .registranion_head h2 {
+                    color: #fff;
+                }
+                
+                .registranion {
+                    min-height: 800px;
+                    background-image: url(./img/reg_Background.png);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    text-align: center;
+                }
+                
+                .reg_input {
+                    padding: 30px;
+                }
+                
+                .reg_input input:focus,
+                .reg_te textarea:focus {
+                    background-color: burlywood;
+                }
+                
+                .reg_mail,
+                .reg_sub {
+                    width: 400px;
+                    height: 50px;
+                    border-radius: 10px;
+                    background-color: #ffffff;
+                }
+                
+                .reg_textarea {
+                    width: 800px;
+                    height: 199px;
+                    border-radius: 10px;
+                    background-color: #ffffff;
+                }
+                
+                textarea {
+                    padding-top: 20px;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #3b434c;
+                }
+                
+                .reg_submit {
+                    width: 210px;
+                    height: 50px;
+                    margin: 30px auto;
+                    border-radius: 10px;
+                    transition: 0.5s;
+                    background-color: #f7600e;
+                }
+                
+                .reg_submit button {
+                    padding-top: 15px;
+                    color: #fff;
+                    background-color: #f7600e;
+                }
+                
+                footer {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 141px;
+                    color: #fff;
+                    background-color: #3b434c;
+                }
+                
+                .footer span::after {
+                    content: '.';
+                    font-weight: 800;
+                    color: red;
+                }
+                
+                .footer span {
+                    font-weight: 800;
+                }
